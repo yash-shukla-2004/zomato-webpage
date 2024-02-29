@@ -52,8 +52,21 @@ body {
 }
 .hero_image_container{
     width:100%;
+    position: relative;
+}
+.hero_background{
+    width:100%;
+    
 }
 
+.hero_image_background{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    z-index: -1;
+}
 .hero_image{
     width: 100%;
     border-radius: 8px;
@@ -76,8 +89,12 @@ body {
 
 .food_card{
     background-color:#f9f9f9 ;
+    border-radius:8px;
 }
-
+.food_card:hover{
+    border: solid 5px #FF3EA5;
+    border-radius: 10px;
+}
 .food_card_image{
     width:100%;
 }
@@ -93,6 +110,41 @@ body {
 
 .food_card{
     margin-bottom:20px;
+}
+
+.updated_desc{
+    text-align: center;
+    margin:10px;
+}
+
+.updated_take{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+    margin-top: 10px;
+}
+
+.input_text{
+    padding:3px;
+    background-color: #dd2476;
+    border-radius: 6px;
+}
+
+.input_text,textarea{
+    background-color: #ff512f;
+    height:27px;
+    padding:3px;
+}
+
+.foot{
+    background-image: linear-gradient(
+        to right, 
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+    );
+    text-align: center;
 }
 
 @media (min-width:768px){
